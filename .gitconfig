@@ -1,0 +1,12 @@
+[alias]
+    st = status
+    rpull = pull --rebase --stat
+[user]
+    name = Laurie Denness
+    email = laurie@denness.net
+[github]
+    user = lozzd
+[color]
+    ui = auto
+[push]
+    default = simple

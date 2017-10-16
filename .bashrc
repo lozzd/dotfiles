@@ -35,7 +35,7 @@ function parse_git_branch {
   branch_pattern="^On branch ([^${IFS}]*)"
   remote_pattern="Your branch is (.*) with"
   diverge_pattern="Your branch and (.*) have diverged"
-  if [[ ! ${git_status} =~ "working directory clean" ]]; then
+  if [[ ! ${git_status} =~ "working tree clean" ]]; then
     state="${LIGHT_RED}⚡"
   fi
   # add an else if or two here if you want to get more specific
@@ -117,3 +117,7 @@ if [ "$TERM" != "dumb" ] && [ -x /usr/bin/dircolors ]; then
     #alias egrep='egrep --color=auto'
 fi
 
+
+if [ -f ~/.local_bashrc ]; then
+    . ~/.local_bashrc
+fi

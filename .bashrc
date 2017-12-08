@@ -88,6 +88,13 @@ alias splendid='done'
 alias smashing='done'
 alias lovely='done'
 
+
+function vimwhich() {
+    thing=`which $1`
+    echo "Running vim $thing"
+    vim $thing
+}
+
 function growl() { echo -e $'\e]9;'${1}'\007' ; return ; }
 
 function fix-ssh() { 

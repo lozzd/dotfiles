@@ -88,6 +88,7 @@ alias splendid='done'
 alias smashing='done'
 alias lovely='done'
 
+alias airport='/System/Library/PrivateFrameworks/Apple80211.framework/Resources/airport'
 
 function vimwhich() {
     thing=`which $1`

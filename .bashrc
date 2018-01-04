@@ -90,6 +90,8 @@ alias lovely='done'
 
 alias airport='/System/Library/PrivateFrameworks/Apple80211.framework/Resources/airport'
 
+alias d='ssh lozzd@denness.net'
+
 function vimwhich() {
     thing=`which $1`
     echo "Running vim $thing"
@@ -125,7 +127,7 @@ if [ "$TERM" != "dumb" ] && [ -x /usr/bin/dircolors ]; then
     #alias egrep='egrep --color=auto'
 fi
 
-
+# Anything private or specific to a local machine
 if [ -f ~/.local_bashrc ]; then
     . ~/.local_bashrc
 fi

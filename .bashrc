@@ -89,8 +89,8 @@ alias smashing='done'
 alias lovely='done'
 
 alias airport='/System/Library/PrivateFrameworks/Apple80211.framework/Resources/airport'
-
 alias d='ssh lozzd@denness.net'
+alias weather="curl http://wttr.in?m"
 
 function vimwhich() {
     thing=`which $1`
